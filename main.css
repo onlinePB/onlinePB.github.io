@@ -1,0 +1,13 @@
+html, body {
+    height:100%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+footer {
+    bottom:0px;
+    position:absolute;
+    width:100%;
+}
