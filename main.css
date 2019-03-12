@@ -2,12 +2,12 @@ html, body {
     height:100%;
 }
 
-h1, h2 {
-    text-align: center;
+footer {
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
 }
 
-footer {
-    bottom:0px;
-    position:absolute;
-    width:100%;
+footer small{
+    display:block;
 }
