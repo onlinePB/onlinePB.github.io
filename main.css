@@ -2,12 +2,12 @@ html, body {
     height:100%;
 }
 
-footer {
-    width: 100%;
-    bottom: 0px;
-    position: fixed;
+/* Primary colour */
+.bg-primary {
+    background-color: #A10702 !important;
 }
 
-footer small{
-    display:block;
+/* Secondary color */
+.bg-secondary {
+    background-color: #031927 !important;
 }
