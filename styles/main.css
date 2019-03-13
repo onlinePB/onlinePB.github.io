@@ -11,3 +11,8 @@ html, body {
 .bg-secondary {
     background-color: #08415c !important;
 }
+
+.imageLink:hover{
+    color: #000;
+    opacity: 0.5;
+}
