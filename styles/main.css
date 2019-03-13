@@ -17,6 +17,10 @@ footer {
     background-color: #08415c !important;
 }
 
+.imageLink, .imageLink:link, .imageLink:visited, .imageLink:active, .imageLink:hover {
+    text-decoration: none;
+}
+
 .imageLink:hover{
     color: #000;
     opacity: 0.5;
