@@ -1,5 +1,9 @@
 html, body {
     height:100%;
+    background-image:url("../images/wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
@@ -14,7 +18,7 @@ footer {
 
 /* Secondary color */
 .bg-secondary {
-    background-color: #08415c !important;
+    background-color: rgba(255,255,255,0.8) !important;
 }
 
 .imageLink, .imageLink:link, .imageLink:visited, .imageLink:active, .imageLink:hover {
