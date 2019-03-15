@@ -31,3 +31,7 @@ footer {
     color: #000;
     opacity: 0.5;
 }
+
+.cardSizeLimit{
+    max-width: 18rem;
+}
