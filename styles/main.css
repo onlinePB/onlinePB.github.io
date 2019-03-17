@@ -5,6 +5,7 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {
@@ -20,7 +21,7 @@ footer {
 
 /* Secondary color */
 .bg-secondary {
-    background-color: rgba(255,255,255,0.8) !important;
+    background-color: rgba(255,255,255,0.9) !important;
 }
 
 .imageLink, .imageLink:link, .imageLink:visited, .imageLink:active, .imageLink:hover {
