@@ -1,0 +1,51 @@
+/* © Ryan Wilson 2019. All rights reserved. */
+
+html, body {
+    height:100%;
+
+    /* Page Background */
+    background-color: rgb(0, 5, 37) !important;
+    background-image:url("../images/backgrounds/city.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Page footer */
+footer {
+    bottom:0px;
+    width:100%;
+}
+
+/* Primary colour */
+.bg-primary {
+    background-color: rgb(18, 202, 255) !important;
+}
+
+/* Secondary color */
+.bg-secondary {
+    background-color: rgba(255,255,255,0.9) !important;
+}
+
+/* Removes text decoration from links */
+.imageLink, .imageLink:link, .imageLink:visited, .imageLink:active, .imageLink:hover {
+    text-decoration: none;
+}
+
+/* Darkens element when hovered */
+.imageLink:hover{
+    color: #000;
+    opacity: 0.5;
+}
+
+/* Limits the width of a card */
+.cardSizeLimit{
+    max-width: 18rem;
+}
+
+/* Limits the height of a slider image */
+.sliderImageSizeLimit{
+    max-height:40rem !important;
+    width:auto;
+}
