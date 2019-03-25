@@ -1,29 +1,383 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <!-- 
+        Website by Ryan Wilson (https://github.com/onlinePB)
+        © Ryan Wilson 2019. All rights reserved.
+
+        Bootstrap is copyrighted by Twitter, and is released under the MIT license.
+        Material Icons is copyrighted by Google, and is released under the Apache 2.0 license.
+    -->
+
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title -->
-    <title>Under Construction</title>
+    <title>Home</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images\favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images\favicon\favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images\favicon\apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" href="images\favicon\favicon.ico">
+
+    <!-- Materical Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles\main.css">
 
 </head>
 <body class="bg-dark text-light">
-    <h1 class="display-1 text-center">Welcome</h1>
-    <p class="text-warning text-center">This site is under construction</p>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="home">
+        <!-- Navbar brand-->
+        <a class="navbar-brand" href="#">
+            Ryan W
+        </a>
 
-    <footer class="page-footer shadow p-3 mb-5 bg-secondary">
-        <small class="text-center text-light">
+        <!-- Navbar expand button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageNavbar" aria-controls="pageNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items -->
+        <div class="collapse navbar-collapse" id="pageNavbar">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        About me
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">
+                        Projects
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Page content -->
+    <div class="container text-dark mb-5">
+        <!-- Welcome header -->
+        <div class="row bg-secondary rounded mt-2 text-center">
+            <div class="col">
+                <!-- Navigation icons -->
+                <div class="mt-2">      
+                    <i class="material-icons text-muted">arrow_upward</i>               
+                    <i class="material-icons text-muted">home</i>      
+                    <a href="#about">
+                        <i class="material-icons text-dark">arrow_downward</i>
+                    </a>
+                 </div>
+
+                <h1>Welcome</h1>
+                <p class="text-muted"><em>to my website!</em></p>
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="row bg-secondary rounded mt-2">
+            <div class="col">
+                <!-- Carousel slider -->
+                <div id="slider" class="carousel slide mt-3 mb-3 sliderSizeLimit" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 sliderImageSizeLimit" src="images/backgrounds/hello.jpg" alt="Hello!">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 sliderImageSizeLimit" src="images/projects/Shmup.png" alt="Gameplay of my Shoot 'em up game'">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 sliderImageSizeLimit" src="images/projects/JPong-2.png" alt="JPong gameplay">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+ 
+            </div>
+        </div>
+
+        <!-- About me header-->
+        <div class="row bg-secondary rounded mt-5 text-center" id="about">
+            <div class="col">
+                <!-- Navigation icons -->
+                <div class="mt-2">
+                    <a href="#home">
+                        <i class="material-icons text-dark">arrow_upward</i>
+                    </a>
+                    <a href="#home">
+                        <i class="material-icons text-dark">home</i>
+                    </a>
+                    <a href="#projects">
+                        <i class="material-icons text-dark">arrow_downward</i>
+                    </a>
+                </div>
+
+                <h1 >I'm Ryan</h1>
+                <p class="text-muted"><em>You can tell because my name is at the top!</em></p>
+            </div>
+        </div>
+
+        <!-- Computing text-->
+        <div class="row bg-secondary rounded mt-2 text-center">
+            <div class="col">
+                <p class="text-center mt-2">A bit about myself</p>
+                <p>
+                    Hello! I'm Ryan, a Computing Science student in the UK.<br>
+                    This is my website! I made it to act as a sort of place to collect my various projects.
+                    I hope to get a career in software or game development someday, as those areas have really captured my interest.
+                    In the meantime, I gotta focus on uni work!
+                </p>
+
+                <!-- Programming languages table-->
+                <table class="table table-striped table-hover table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td class="text-left">
+                                I have been doing Python since my third year in secondary school, so naturally I'm quite familiar with it.
+                                One of my favourite Python programs I've written was a game made with PyGame I developed for a coursework assignment.
+                            </td>      
+                        </tr>
+
+                        <tr>
+                            <td>HTML & CSS</td>
+                            <td class="text-left">
+                                I've been using HTML and CSS since secondary school, and have used it on a range of web projects (including this site!).
+                                Recently, I learned about using CSS frameworks which has vastly improved the quality of my sites.
+                            </td>      
+                        </tr>
+
+                        <tr>
+                            <td>JavaScript</td>
+                            <td class="text-left">
+                                JavaScript has been something I've used here-and-there for a while, but once I got into my first year of Uni I really
+                                got a grasp on how to use it. 
+                            </td>     
+                        </tr>
+
+                        <tr>
+                            <td>Node.js</td>
+                            <td class="text-left">
+                                I've mostly used Node.js for developing Discord bots with libraries like eris or Discord.js, its proven to be very
+                                useful to know.      
+                            </td>
+                                    
+                        </tr>
+
+                        <tr>
+                            <td>PHP</td>
+                            <td class="text-left">
+                                I've used a small amount of PHP to connect to MySQL databases to do sorts and queries, as well as some other basic functions. In the future, I'd like to expand my understanding of PHP.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>MySQL</td>
+                            <td class="text-left">
+                                I've used MySQL to create databases for websites that allow the user to sort and search for content. I've found it very interesting to learn as it's quite different to other languages I know.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Processing</td>
+                            <td class="text-left">
+                                I've used processing along with arduino to create small devices that expand their functionality when plugged into a computer.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Arduino</td>
+                            <td class="text-left">
+                                I'ved used arduino to create small devices on a breadboard, I've even connected it up to processing to extend the functionality of the devices.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td >Java</td>
+                            <td class="text-left">
+                                I didn't start learning Java until the first year of Uni, and it's been really fascinating to learn! I
+                                taught myself how to make graphical games like Pong in Java, and it's really helped my study of the language.    
+                            </td>
+                                        
+                        </tr>
+                    </tbody>
+                 </table>
+                 <p>
+                    By far, I'd say that Python and Java are currently my favourite languages. I hope to learn C# or C++ in future, as they seem like very powerful languages that would prove to be really useful to know, and really fun to use.
+                 </p>
+            </div>
+        </div>
+
+        <!-- GitHub profile link-->
+        <div class="row bg-secondary rounded mt-2 text-center">
+            <div class="col">  
+                <div class="float-center">
+                    <a href = "https://github.com/onlinePB" class="imageLink">
+                        <img src="images\logos\GitHub-Mark.png" alt="The GitHub mark" class="mt-3 mb-3">
+                    </a>
+                </div>
+                <p class="text-center mt-3 mb-3">
+                    Checkout my GitHub profile! This is where I keep my projects, including this site.
+                </p>
+            </div>
+        </div>
+
+        <!-- Other hobbies text -->
+        <div class="row bg-secondary rounded mt-2 text-center">
+            <div class="col">
+                <p class="text-center mt-2">Other than computing</p>
+                <p class="text-left">
+                    When I'm not coding, I love to play video games. Honestly, I think video games are probably what lead to me being so interested in computers! I also
+                    love to listen to music, read graphic novels/mangas, watch cartoons/anime and go on the occasional hill walk.
+                    <br><br>
+                    One of my aspirations is to visit Japan, I really want to see the cities as well as the historical and rural areas. It sounds silly, but one of the things
+                    I want to do is visit one of their multi-story arcades - I've never seen arcades so big! Not to mention they get all the cool new arcade games. The weird
+                    and wonderful tech, aswell as the unique culture really interest me.
+                </p>
+            </div>
+        </div>
+
+        <!-- Projects Header-->
+        <div class="row bg-secondary rounded mt-5 text-center" id="projects">
+            <div class="col">
+                <!-- Navigation icons -->
+                <div class="mt-2">
+                    <a href="#about">
+                        <i class="material-icons text-dark">arrow_upward</i>
+                    </a>
+                    <a href="#home">
+                        <i class="material-icons text-dark">home</i>
+                    </a>
+                    <i class="material-icons text-muted">arrow_downward</i> 
+                </div>
+
+                <h1 >Projects</h1>
+                <p class="text-muted"><em>Otherwise known as "stuff I've worked on"</em></p>
+            </div>
+        </div>
+
+        <!-- Projects text -->
+        <div class="row bg-secondary rounded mt-2 text-center">
+            <div class="col">
+                <p class="text-left mt-3">
+                    Here are my projects! Mostly they're to do with the software side of things, but I do
+                    web-based projects occasionally aswell. Since I've started using version control systems
+                    like Git, my ability to keep track of my projects has improved immensely - and while a lot of my older projects have
+                    been lost to time over the years, I will be building back up my collection of projects.
+                    <br><br>
+                    Below, you can see the featured projects section! This is where I display some of my favourite projects that 
+                    I've worked on. The rest of my projects are on my GitHub.
+                </p>
+            </div>
+        </div>
+
+        
+
+        <!-- Featured Projects Header -->
+        <div class="row bg-secondary rounded mt-2 text-center">
+            <div class="col">
+                <h2>Featured Projects</h2>
+                <p class="text-muted"><em>You can find the rest on my GitHub!</em></p>
+            </div>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="row bg-secondary rounded mt-2 text-center">
+            <!-- Project Card -->
+            <div class="col">
+                <a href="#" class="imageLink text-dark">
+                    <div class="card mx-auto mt-2 mb-2 cardSizeLimit">
+                        <img class="card-img-top border border-primary" src="images\projects\comingsoon.png" alt="A question mark">
+                        <div class="card-body">
+                            
+                            <h5 class="card-title">Coming Soon</h5>
+                            <p class="card-text">This collaborative project is coming soon...</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+            <!-- Project Card -->
+            <div class="col">
+                <a href="https://github.com/onlinePB/JPong" class="imageLink text-dark">
+                    <div class="card mx-auto mt-2 mb-2 cardSizeLimit">
+                        <img class="card-img-top border border-primary" src="images\projects\JPong.png" alt="A game of JPong">
+                        <div class="card-body">
+                            
+                            <h5 class="card-title">JPong</h5>
+                            <p class="card-text">Pong made in Java!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        
+
+            <!-- Project Card -->
+            <div class="col">
+                <a href="https://github.com/onlinePB/Greg" class="imageLink text-dark">
+                    <div class="card mx-auto mt-2 mb-2 cardSizeLimit">
+                        <img class="card-img-top border border-primary" src="images\projects\Greg.png" alt="Someone using Greg">
+                        <div class="card-body">
+                            
+                            <h5 class="card-title">Greg</h5>
+                            <p class="card-text">A devious Discord bot!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- GitHub profile link -->
+        <div class="row bg-secondary rounded mt-2 text-center">
+            <div class="col">
+                <p class="text-center mt-3 mb-3">
+                    You can check out my other projects on my GitHub profile!
+                </p>
+                <hr>
+                <div class="float-center">
+                    <a href = "https://github.com/onlinePB" class="imageLink">
+                        <img src="images\logos\GitHub-Mark.png" alt="The GitHub mark" class="mt-3 mb-4">
+                    </a>
+                </div>
+            </div>
+        </div>     
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer position-fixed text-center mt-4">
+        <small class="text-light">
             Ryan Wilson, 2019
         </small>
     </footer>
-    
+
+
+    <!-- jQuery, Popper.js & Bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
